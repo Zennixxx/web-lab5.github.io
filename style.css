@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s ease;
+}
+header:hover{
+    background-color: #105012;
+}
+
+.navigation {
+    background-color: #333;
+    color: white;
+}
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation ul li {
+    margin: 0 15px;
+}
+
+.navigation ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.navigation ul li a:hover {
+    background-color: #666666;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    background-color: #f4f4f4;
+    padding: 10px;
+    width: 100px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+}
+
+.sidebar.open {
+    width: 250px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+#toggleButton {
+    background-color: #ffb278;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/*#toggleButton:hover {*/
+/*    background-color: #cc5200;*/
+/*}*/
