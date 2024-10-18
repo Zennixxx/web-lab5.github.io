@@ -7,9 +7,9 @@ document.getElementById('toggleButton').addEventListener('click', function() {
         sidebar.classList.add('open');
     }
 });
-button.addEventListener('mouseover', function(e) {
+button.addEventListener('mouseover', function() {
     button.style.backgroundColor = '#cc5200';
 })
-button.addEventListener('mouseout', function(e) {
+button.addEventListener('mouseout', function() {
     button.style.backgroundColor = '#ffb278';
 })
